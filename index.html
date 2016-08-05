@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
+
+<head>
+
+	<meta charset="utf-8">
+	<title>List.RST.ua - спец. доступ к базе непроверенных объявлений RST.</title>
+	<!-- SEO -->
+  <meta name="author" content="">
+  <meta name="description" content="List.RST.ua - спец. доступ к базе непроверенных объявлений RST.">
+  <meta name="keywords" content="List.RST.ua - спец. доступ к базе непроверенных объявлений RST.">
+  <link rel="shortcut icon" href="http://i.rst.ua/favicon.gif">
+
+	<!-- Load CSS Compilled without JS -->
+	<noscript>  
+		<link rel="stylesheet" href="css/main.css"> 
+	</noscript>
+	<link rel="stylesheet" href="libs/font-awesome-4.6.1/css/font-awesome.min.css">
+	<link rel="stylesheet" href="libs/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="libs/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="css/main.css">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+</head>
+
+<body>
+	<div class="container">
+
+		<!-- start: header -->
+			<header class="header vcenter">
+				<div class="col-xs-6 col-md-4 col-lg-3">
+					<a href="#"><img src="//i.rst.ua/images/rst-ua-logo.png"></a>
+				</div>
+				<div class="col-md-4 col-lg-4 hidden-xs hidden-sm1 header-help">
+          <h2>List.RST.ua</h2>
+          <p>спец. доступ к базе непроверенных объявлений RST.</p>                
+         </div>
+         <div class="col-xs-4 col-md-7 col-lg-5 header-buttons">
+         	<div class="row">
+         		<div class="col-xs-4 text-center pull-right hidden visible-xs">
+         			<button type="button" class="btn btn-default navbar-toggle collapsed" data-toggle="collapse" data-target="#rst-top-menu" aria-expanded="false">
+         				<span class="sr-only">Toggle navigation</span>
+         				<span class="icon-bar"></span>
+         				<span class="icon-bar"></span>
+         				<span class="icon-bar"></span>
+         			</button>
+         		</div>
+         		<div class="col-xs-4 col-sm-12 col-md-5 text-center pull-right">
+         			<a href="#" class="btn btn-default col-sm-12">
+         			<i class="fa fa-user fa-lg" aria-hidden="true"></i>
+         			<b class="hidden-xs">Войти в кабинет</b></a>
+         			<small class="text-muted hidden-xs hidden-sm">изменить цену, обновить дату<br> удалить после продажи</small>
+         		</div>
+         		<div class="col-xs-4 col-sm-12 col-md-7 text-center pull-right">
+         			<a href="#" class="btn btn-default main-link col-sm-12">
+         			<i class="fa fa-plus fa-lg" aria-hidden="true"></i>
+         			<b class="hidden-xs">Разместить объявление</b></a>
+         			<small class="text-muted hidden-xs hidden-sm">бесплатно, без регистрации</small>
+         		</div>
+         	</div>
+         </div>
+			</header>
+			<!-- end: header -->
+
+			<!-- start: top nav -->
+			<nav class="navbar navbar-inverse">
+				<div class="navbar-header">
+					<span class="navbar-brand hidden visible-xs">List.RST.ua</span>
+				</div>
+				<div aria-expanded="false" class="navbar-collapse collapse" id="rst-top-menu">
+					<ul class="nav navbar-nav">
+						<li><a href="#">Главная</a></li>
+						<li><a href="#">Автосалоны</a></li>
+						<li><a href="#">Авторынок</a></li>
+						<li><a href="#">Продать машину</a></li>
+						<li><a href="#"><i class="fa fa-exchange" aria-hidden="true"></i>Обмен авто</a></li>
+						<li class="hidden-sm visible-lg visible-md visible-xs"><a href="#"><i class="fa fa-leaf" aria-hidden="true"></i>Свежые новости</a></li>
+						<li><a href="#">Еще...</a></li>
+					</ul>
+				</div>
+			</nav>
+			<!-- end: top nav -->
+
+			<!-- start: page-section -->
+			<div class="page-section">
+
+				<div class="page-tree">
+					<span>Авторынок Украины</span>
+				</div>
+
+				<!-- start: main -->
+				<div class="row">
+					<div class="col-lg-9 main">
+
+					<!-- start: main-header -->
+						<div class="main-header">
+							<h3 class="result-title">Найдено по Вашему запросу на <span class="main-color">RST</span></h3>
+							<div class="alert alert-default" role="alert">
+								<strong class="main-color">!</strong> Из поиска исключены <a href="#">не растаможенные</a> авто и <a href="#">по запчастям</a>
+							</div>
+							<div class="sort-list clearfix">
+								<span class="pull-left">Сортировка:</span>
+								<ul class="pull-left">
+									<li><a href="#" class="active">по дате актуальности</a></li>
+									<li><a href="#">от дешевых</a> ↑</li>
+									<li><a href="#">от дорогих</a> ↓</li>
+									<li><a href="#">за неделю</a></li>
+									<li><a href="#">за вечеа</a></li>
+									<li><a href="#">по пробегу</a> ↑</li>
+								</ul>
+							</div>
+						</div>
+						<!-- end: main-header -->
+
+						<!-- start: main-content -->
+						<div class="main-content">
+
+							<!-- start: prod-item -->
+							<div class="prod-item clearfix">
+								<a href="#" class="bookmark-link" title="добавить в блокнот"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+								<div class="prod-img col-sm-3 text-center">
+									<div class="row">
+										<a href="#"><img src="http://img1.rstcars.com/oldcars/mercedes/s-class/middle/5840623-0.jpg" alt="img"></a>
+									</div>
+								</div>
+								<div class="col-sm-9">
+									<div class="row">
+										<div class="prod-title">
+											<a href="#"><h3>продам MERCEDES S-Class 600</h3></a>
+										</div>
+										<div class="prod-info">
+											<ul class="prod-list">
+												<li class="price-box">
+													<strong class="price-uan">Цена: <span>235'700 грн</span></strong> 
+													<span class="price-usd">($9'500)</span>
+												</li>
+												<li>Область: <strong>Одесса</strong></li>
+												<li>Год: <strong>2000</strong>, (156000 - пробег)</li>
+												<li>Состояние: <strong>Хорошее</strong></li>
+												<li>Двиг: <strong>5.8</strong> Бензин (<strong>Типтроник</strong>)</li>
+											</ul>
+										</div>
+										<div class="col-md-9 prod-descr">
+											<div class="row">
+												Украинская регистрация.Очень хорошая машина с очень недорогим обслуживанием.Есть сервисная книжка с первого дня эксплуат
+											</div>
+										</div>
+										<div class="col-md-3 prod-links text-left">
+											<div class="row">
+												<a href="#">найти похожие авто на RST</a>
+												<a href="#">исключить такие авто</a>
+											</div>
+										</div>
+										<div class="col-sm-6 prod-data text-left">
+											<div class="row">
+												обновлено 02.08.2016
+											</div>
+										</div>
+										<div class="col-sm-6 prod-premium text-right">
+											<strong title="Премиум объявление x51 - это выкупленная позиция в поиске RST сроком на 2 недели. Если Вы продаете автомобиль и хотите показываться выше данного объявления, Вам необходимо купить позицию Премиум x52.">Премиум обьявление x51</strong>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- end: prod-item -->
+
+							<!-- start: prod-item -->
+							<div class="prod-item clearfix">
+								<a href="#" class="bookmark-link" title="добавить в блокнот"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+								<div class="prod-img col-sm-3 text-center">
+									<div class="row">
+										<a href="#"><img src="http://img.rstcars.com/oldcars/smart/fortwo/middle/5021027-0.jpg" alt="img"></a>
+									</div>
+								</div>
+								<div class="col-sm-9">
+									<div class="row">
+										<div class="prod-title">
+											<a href="#"><h3>продам SMART Fortwo Panorama</h3></a>
+										</div>
+										<div class="prod-info">
+											<ul class="prod-list">
+												<li class="price-box">
+													<strong class="price-uan">Цена: <span>235'700 грн</span></strong> 
+													<span class="price-usd">($9'500)</span>
+												</li>
+												<li>Область: <strong>Одесса</strong></li>
+												<li>Год: <strong>2000</strong>, (156000 - пробег)</li>
+												<li>Состояние: <strong>Хорошее</strong></li>
+												<li>Двиг: <strong>5.8</strong> Бензин (<strong>Типтроник</strong>)</li>
+											</ul>
+										</div>
+										<div class="col-md-9 prod-descr">
+											<div class="row">
+												АВТО З ГАРАНТІЄЮ НА ДВИГУН - 25000 км від ТОВ Smart Style UA! Smart Style - територія Smart! Вітаємо Вас! На сього
+											</div>
+										</div>
+										<div class="col-md-3 prod-links text-left">
+											<div class="row">
+												<a href="#">найти похожие авто на RST</a>
+												<a href="#">исключить такие авто</a>
+											</div>
+										</div>
+										<div class="col-sm-6 prod-data text-left">
+											<div class="row">
+												обновлено 02.08.2016
+											</div>
+										</div>
+										<div class="col-sm-6 prod-premium text-right">
+											<strong title="Премиум объявление x51 - это выкупленная позиция в поиске RST сроком на 2 недели. Если Вы продаете автомобиль и хотите показываться выше данного объявления, Вам необходимо купить позицию Премиум x52.">Премиум обьявление x51</strong>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- end: prod-item -->
+
+							<!-- start: prod-item -->
+							<div class="prod-item clearfix">
+								<a href="#" class="bookmark-link" title="добавить в блокнот"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+								<div class="prod-img col-sm-3 text-center">
+									<div class="row">
+										<a href="#"><img src="http://img.rstcars.com/oldcars/smart/fortwo/middle/5021027-0.jpg" alt="img"></a>
+									</div>
+								</div>
+								<div class="col-sm-9">
+									<div class="row">
+										<div class="prod-title">
+											<a href="#"><h3>продам SMART Fortwo Panorama</h3></a>
+										</div>
+										<div class="prod-info">
+											<ul class="prod-list">
+												<li class="price-box">
+													<strong class="price-uan">Цена: <span>235'700 грн</span></strong> 
+													<span class="price-usd">($9'500)</span>
+												</li>
+												<li>Область: <strong>Одесса</strong></li>
+												<li>Год: <strong>2000</strong>, (156000 - пробег)</li>
+												<li>Состояние: <strong>Хорошее</strong></li>
+												<li>Двиг: <strong>5.8</strong> Бензин (<strong>Типтроник</strong>)</li>
+												<li class="main-color"><i class="fa fa-exchange" aria-hidden="true"></i> Возможен обмен</li>
+											</ul>
+										</div>
+										<div class="col-md-9 prod-descr">
+											<div class="row">
+
+											</div>
+										</div>
+										<div class="col-md-3 prod-links text-left">
+											<div class="row">
+												<a href="#">найти похожие авто на RST</a>
+												<a href="#">исключить такие авто</a>
+											</div>
+										</div>
+										<div class="col-sm-6 prod-data text-left">
+											<div class="row">
+												обновлено 02.08.2016
+											</div>
+										</div>
+										<div class="col-sm-6 prod-premium text-right">
+											<strong title="Премиум объявление x51 - это выкупленная позиция в поиске RST сроком на 2 недели. Если Вы продаете автомобиль и хотите показываться выше данного объявления, Вам необходимо купить позицию Премиум x52.">Премиум обьявление x51</strong>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- end: prod-item -->
+
+							<!-- start: smaster-block -->
+							<div class="smaster-block clearfix">
+								<h4 class="smaster-title">Быстрая навигация на <span class="main-color">RST</span></h4>
+								<div class="smaster-logo col-sm-4">
+									<img src="http://i.rst.ua/rst-ua-searchmaster-logo.png" alt="alt">
+								</div>
+								<div class="col-sm-8 smaster-content">
+									<h4><strong>Какой автомобиль Вы хотите найти?</strong></h4>
+									<ol>
+										<li><a href="#">Легковой автомобиль</a></li>
+										<li><a href="#">Коммерческий транспорт</a></li>
+									</ol>
+								</div>
+							</div>
+							<!-- end: smaster-block -->
+
+							<!-- start: prod-item -->
+							<div class="prod-item clearfix">
+								<a href="#" class="bookmark-link" title="добавить в блокнот"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+								<div class="prod-img col-sm-3 text-center">
+									<div class="row">
+										<a href="#"><img src="http://img1.rstcars.com/oldcars/mercedes/g-class/middle/5857070-0.jpg" alt="img"></a>
+									</div>
+								</div>
+								<div class="col-sm-9">
+									<div class="row">
+										<div class="prod-title">
+											<a href="#"><h3>продам SMART Fortwo Panorama</h3></a>
+										</div>
+										<div class="prod-info">
+											<ul class="prod-list">
+												<li class="price-box">
+													<strong class="price-uan">Цена: <span>235'700 грн</span></strong> 
+													<span class="price-usd">($9'500)</span>
+												</li>
+												<li>Область: <strong>Одесса</strong></li>
+												<li>Год: <strong>2000</strong>, (156000 - пробег)</li>
+												<li>Состояние: <strong>Хорошее</strong></li>
+												<li>Двиг: <strong>5.8</strong> Бензин (<strong>Типтроник</strong>)</li>
+											</ul>
+										</div>
+										<div class="col-md-9 prod-descr">
+											<div class="row">
+												АВТО З ГАРАНТІЄЮ НА ДВИГУН - 25000 км від ТОВ Smart Style UA! Smart Style - територія Smart! Вітаємо Вас! На сього
+											</div>
+										</div>
+										<div class="col-md-3 prod-links text-left">
+											<div class="row">
+												<a href="#">найти похожие авто на RST</a>
+												<a href="#">исключить такие авто</a>
+											</div>
+										</div>
+										<div class="col-sm-6 prod-data text-left">
+											<div class="row">
+												обновлено 02.08.2016
+											</div>
+										</div>
+										<div class="col-sm-6 prod-premium text-right">
+											<strong title="Премиум объявление x51 - это выкупленная позиция в поиске RST сроком на 2 недели. Если Вы продаете автомобиль и хотите показываться выше данного объявления, Вам необходимо купить позицию Премиум x52.">Премиум обьявление x51</strong>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- end: prod-item -->
+
+							<!-- start: prod-item -->
+							<div class="prod-item clearfix">
+								<a href="#" class="bookmark-link" title="добавить в блокнот"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+								<div class="prod-img col-sm-3 text-center">
+									<div class="row">
+										<a href="#"><img src="http://img.rstcars.com/oldcars/smart/fortwo/middle/5021027-0.jpg" alt="img"></a>
+									</div>
+								</div>
+								<div class="col-sm-9">
+									<div class="row">
+										<div class="prod-title">
+											<a href="#"><h3>продам SMART Fortwo Panorama</h3></a>
+										</div>
+										<div class="prod-info">
+											<ul class="prod-list">
+												<li class="price-box">
+													<strong class="price-uan">Цена: <span>235'700 грн</span></strong> 
+													<span class="price-usd">($9'500)</span>
+												</li>
+												<li>Область: <strong>Одесса</strong></li>
+												<li>Год: <strong>2000</strong>, (156000 - пробег)</li>
+												<li>Состояние: <strong>Хорошее</strong></li>
+												<li>Двиг: <strong>5.8</strong> Бензин (<strong>Типтроник</strong>)</li>
+												<li class="main-color"><i class="fa fa-exchange" aria-hidden="true"></i> Возможен обмен</li>
+											</ul>
+										</div>
+										<div class="col-md-9 prod-descr">
+											<div class="row">
+
+											</div>
+										</div>
+										<div class="col-md-3 prod-links text-left">
+											<div class="row">
+												<a href="#">найти похожие авто на RST</a>
+												<a href="#">исключить такие авто</a>
+											</div>
+										</div>
+										<div class="col-sm-6 prod-data text-left">
+											<div class="row">
+												обновлено 02.08.2016
+											</div>
+										</div>
+										<div class="col-sm-6 prod-premium text-right">
+											<strong title="Премиум объявление x51 - это выкупленная позиция в поиске RST сроком на 2 недели. Если Вы продаете автомобиль и хотите показываться выше данного объявления, Вам необходимо купить позицию Премиум x52.">Премиум обьявление x51</strong>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- end: prod-item -->
+
+						</div>
+						<!-- end: main-content -->
+
+            <!-- start: pagination -->
+						<div class="pagination-container text-center">
+							<nav> 
+								<ul class="pagination"> 
+									<li><a href="#">1</a></li> 
+									<li><a href="#">2</a></li> 
+									<li class="active"><a href="#">3</a></li> 
+									<li><a href="#">4</a></li> 
+									<li><a href="#">5</a></li>
+									<li><a href="#">6</a></li> 
+									<li><a href="#">7</a></li> 
+									<li><a href="#">8</a></li> 
+									<li><a href="#">9</a></li> 
+									<li><a href="#">10</a></li>  
+									<li><a href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li> 
+								</ul> 
+							</nav>
+						</div>
+						<!-- end: pagination -->
+
+						<div class="your-advert main-color text-center">
+							+ <a href="#">разместить свое объявление на <span>RST</span></a>
+						</div>
+
+					</div>
+					<!-- end: main-content -->
+
+					<!-- start: search-block -->
+					<div class="search-block-container">
+						<div class="search-block">
+
+							<!-- start: button-container -->
+							<div class="button-container">
+								<a href="#" class="but1">Авторынок на <span class="main-color">RST</span> автобазар Украины</a>
+								<a href="#" class="but2">Новые авто</a>
+							</div>
+							<!-- end: button-container -->
+
+							<!-- start: search-form -->
+							<form class="form-horizontal search-form">
+							 <!--start: row  -->
+								<div class="form-group text-left">
+									<h4 class="form-title">Текущие настройки поиска:</h4>
+								</div>
+								<!-- end: row -->
+								
+								<!-- start: row -->
+								<div class="form-group">
+									<label for="select1" class="col-sm-3 control-label">Марка</label>
+									<div class="col-sm-9">
+										<select class="form-control" id="select1">
+											<option>- все марки -</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+											<option>5</option>
+										</select>
+									</div>
+								</div>
+								<!-- end: row -->
+								
+								<!-- start: row -->
+								<div class="form-group">
+									<label for="select2" class="col-sm-3 control-label">Модель</label>
+									<div class="col-sm-9">
+										<select class="form-control" id="select2">
+											<option>- все модели -</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+											<option>5</option>
+										</select>
+									</div>
+								</div>
+								<!-- end: row -->
+						
+								<!-- start: row -->
+								<div class="form-group">
+									<label for="select3" class="col-sm-3 control-label">Тип авто</label>
+									<div class="col-sm-9">
+										<select class="form-control" id="select2">
+											<option>- все типы -</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+											<option>5</option>
+										</select>
+									</div>
+								</div>
+								<!-- end: row -->
+								
+								<!-- start: row -->
+								<div class="form-group text-center">
+									<button type="submit" class="btn">Поиск на RST</button>
+								</div>
+								<!-- end: row -->
+						
+								<!-- start: row -->
+								<div class="form-group">
+									<div class="col-sm-7">
+										<a href="#" class="reset-form">сбросить настройки</a>
+									</div>
+									<div class="col-sm-5">
+										<div class="checkbox">
+											<label>
+												<input type="checkbox"> обмен
+											</label>
+										</div>
+									</div>
+								</div>
+						              <!-- end: row -->
+						
+								<!-- start: row -->
+								<div class="form-group">
+									<label for="select4" class="col-sm-3 control-label">Цена в $</label>
+									<div class="col-sm-4">
+										<select class="form-control" id="select4">
+											<option>от</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+											<option>5</option>
+										</select>
+									</div>
+									<div class="devider">-</div>
+									<div class="col-sm-4">
+										<select class="form-control">
+											<option>до</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+											<option>5</option>
+										</select>
+									</div>
+								</div>
+								<!-- end: row -->
+						
+								<!-- start: row -->
+								<div class="form-group">
+									<label for="select5" class="col-sm-3 control-label">Год</label>
+									<div class="col-sm-4">
+										<select class="form-control" id="select5">
+											<option>от</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+											<option>5</option>
+										</select>
+									</div>
+									<div class="devider">-</div>
+									<div class="col-sm-4">
+										<select class="form-control">
+											<option>до</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+											<option>5</option>
+										</select>
+									</div>
+								</div>
+								<!-- end: row -->
+						
+								<!-- start: row -->
+								<div class="form-group">
+									<label for="select6" class="col-sm-3 control-label">Область</label>
+									<div class="col-sm-9">
+										<select class="form-control" id="select6">
+											<option>- по всей стране -</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+											<option>5</option>
+										</select>
+									</div>
+								</div>
+								<!-- end: row -->
+						
+								<!-- start: row -->
+								<div class="form-group">
+									<label for="select7" class="col-sm-3 control-label">Состояние</label>
+									<div class="col-sm-9">
+										<select class="form-control" id="select7">
+											<option>----</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+											<option>5</option>
+										</select>
+									</div>
+								</div>
+								<!-- end: row -->
+						
+						    <!-- start: row -->
+								<div class="form-group text-center">
+									<a class="show-more" href="#">+ открыть доп. параметры</a>
+								</div>
+								<!-- end: row -->
+						
+								<!-- start: more-settings -->
+								<div class="more-settings">
+									<!-- start: row -->
+									<div class="form-group text-left">
+										<h4 class="form-title">Дополнительно:</h4>
+									</div>
+									<!-- end: row -->
+
+									<!-- start: row -->
+									<div class="form-group">
+										<label for="select8" class="col-sm-3 control-label">Двигатель</label>
+										<div class="col-sm-4">
+											<select class="form-control" id="select8">
+												<option>от</option>
+												<option>2</option>
+												<option>3</option>
+												<option>4</option>
+												<option>5</option>
+											</select>
+										</div>
+										<div class="devider">-</div>
+										<div class="col-sm-4">
+											<select class="form-control">
+												<option>до</option>
+												<option>2</option>
+												<option>3</option>
+												<option>4</option>
+												<option>5</option>
+											</select>
+										</div>
+									</div>
+									<!-- end: row -->
+
+									<!-- start: row -->
+									<div class="form-group">
+										<label for="select9" class="col-sm-3 control-label">Топливо</label>
+										<div class="col-sm-9">
+											<select class="form-control" id="select9">
+												<option>----</option>
+												<option>2</option>
+												<option>3</option>
+												<option>4</option>
+												<option>5</option>
+											</select>
+										</div>
+									</div>
+									<!-- end: row -->
+
+									<!-- start: row -->
+									<div class="form-group">
+										<label for="select10" class="col-sm-3 control-label">КПП</label>
+										<div class="col-sm-9">
+											<select class="form-control" id="select10">
+												<option>----</option>
+												<option>2</option>
+												<option>3</option>
+												<option>4</option>
+												<option>5</option>
+											</select>
+										</div>
+									</div>
+									<!-- end: row -->
+
+									<!-- start: row -->
+									<div class="form-group">
+										<label for="select11" class="col-sm-3 control-label">Привод</label>
+										<div class="col-sm-9">
+											<select class="form-control" id="select11">
+												<option>----</option>
+												<option>2</option>
+												<option>3</option>
+												<option>4</option>
+												<option>5</option>
+											</select>
+										</div>
+									</div>
+									<!-- end: row -->
+
+									<!-- start: row -->
+									<div class="form-group">
+										<label for="select12" class="col-sm-7 control-label">Кол-во результатов - </label>
+										<div class="col-sm-5">
+											<select class="form-control" id="select12">
+												<option>----</option>
+												<option>2</option>
+												<option>3</option>
+												<option>4</option>
+												<option>5</option>
+											</select>
+										</div>
+									</div>
+									<!-- end: row -->
+								</div>
+								<!-- end: more-settings -->
+							</form>
+							<!-- end: search-form -->
+
+							<div class="your-advert main-color text-center">
+							+ <a href="#">разместить свое объявление на <span>RST</span></a>
+						</div>
+
+						</div>
+					</div>
+					<!-- end: search-block -->
+
+				</div>
+			</div>
+
+			<!-- end: page -->
+
+			<!-- start: nav -->
+			<nav class="navbar navbar-inverse">
+				<ul class="nav navbar-nav bottom-nav">
+					<li><a href="#">Контакты</a></li>
+					<li><a href="#">Реклама автосалона</a></li>
+					<li><a href="#">Банерная реклама</a></li>
+				</ul>
+			</nav>
+			<!-- end: nav -->
+
+			<footer class="footer">
+
+				<div class="footer-meta col-md-12">
+					<p>
+						RST.ua является социальным украинским интернет сайтом. <br>
+						Администрация сайта не несет ответственности <br>
+						за информацию размещенную пользователями. <br>
+						При использовании материалов, ссылка на RST обязательна.
+					</p>
+				</div>
+
+				<div class="footer-copyright col-md-10">
+					<p>©2006-2016 RST™ и RSTcars™</p>
+				</div>
+				<div class="col-md-2">
+					<a href="#" class="text-right"><img src="http://top.rst.ua/hit"></a>
+				</div>
+
+			</footer>
+
+	</div>
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+
+
+	<script src="libs/modernizr/modernizr.js"></script>
+	<script src="libs/jquery/jquery.min.js"></script>
+	<script src="libs/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	<script src="libs/jquery.form-validator.min.js"></script>
+	<script src="js/common.js"></script>
+</body>
+</html>

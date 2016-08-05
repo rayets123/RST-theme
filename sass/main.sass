@@ -1,0 +1,402 @@
+@import "bourbon"
+@import "_var.sass"
+@import "_reset.sass"
+
+
+*::-webkit-input-placeholder
+	color: #a0a0a0
+	font-style: italic
+
+*:-moz-placeholder
+	color: #a0a0a0
+	font-style: italic
+
+*::-moz-placeholder
+	color: #a0a0a0
+	font-style: italic
+
+*:-ms-input-placeholder
+	color: #a0a0a0
+	font-style: italic
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #fff
+body input:required:valid,
+body textarea:required:valid
+	color: #fff
+
+//---------Custom Styles Here----
+
+a:active, a:hover, a:focus
+	outline: none
+h1
+	font-size: 24px
+
+h2
+	font-size: 20px
+
+h3
+	font-size: 18px
+
+h4
+	font-size: 16px
+
+h5
+	font-size: 14px
+
+b, strong
+	font-weight: bold
+
+.hidden
+	display: none
+
+.before
+	content: ''
+	width: 100%
+	height: 100%
+	position: absolute
+	left: 0
+	top: 0
+
+body
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif
+	font-size: 14px
+	line-height: 1.42857143
+	color: #333
+	background-color: #fff
+	margin: 0
+  overflow: hidden
+
+
+.vcenter
+		display: flex
+		align-items: center
+
+//main style
+body>.container
+	box-shadow: 0 0 50px #e8e8e8
+	min-width: 320px
+	padding-bottom: 20px
+.header
+	margin: 10px 0
+	img
+		width: 100%
+	.btn
+		margin-top: 6px
+		font-weight: bold
+.header-help
+	color: #888
+.main
+	position: relative
+.main-link
+	color: $main-color
+	&:hover, &:focus
+		color: $main-color
+.header-buttons
+	b
+		margin-left: 4px
+		text-decoration: underline
+	small
+		font-size: 10px
+		display: block
+		line-height: 12px
+.navbar-toggle
+	margin: 0
+	.icon-bar
+		background-color: #333
+.navbar
+	margin-bottom: 5px
+.navbar-inverse
+	min-height: 40px
+	border: 0
+	background: #333 url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAIBAMAAAAy1HOFAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAJ1BMVEUpKSk6OTk6OTo6OjksLCw2NTU1NDU2NDU2NTQxMDExMDAwMDD///9WuzG7AAAAAWJLR0QMgbNRYwAAAAlwSFlzAAALEgAACxIB0t1+/AAAACxJREFUCNdjYGBgVDRkcHFxTW9lmLV65qqdDGEVIS4uDELCAgwMUDZEHKwGACi3DdHA6D/6AAAAAElFTkSuQmCC") 0 0 !important
+	box-shadow: inset 0 -15px 55px rgba(0,0,0,0.8),inset 0 5px 55px rgba(255,255,255,0.6)
+	.navbar-nav > li > a
+		color: #eee
+		border-radius: 3px
+		border: solid #5e5e5e 1px
+		border-right-color: #333
+		border-top: 0
+		border-bottom: 0
+		padding: 10px 15px
+		transition: .5s
+		text-shadow: 0 0 1px #000
+		&:hover
+			background-color: #333
+		.fa
+			margin-right: 5px
+		.fa-exchange
+			color: #FECB66
+		.fa-leaf
+			color: #4EA027
+	.navbar-brand
+    color: #fff
+	.navbar-collapse
+		padding-left: 0
+.page-section
+	margin-bottom: 30px
+
+.page-tree
+	box-shadow: inset 0 0 7px 0 #cfcfcf
+	background-color: #FFF
+	padding: 2px 5px
+	margin-bottom: 5px
+	font-size: 14px
+	border-radius: 3px
+.main-color
+	color: $main-color
+.alert
+	box-shadow: none
+	text-shadow: none
+	margin-bottom: 5px
+.alert-default
+	background-color: #AEAEAE
+	padding: 2px 5px
+	font-size: 11px
+	color: #fff
+	a
+		text-decoration: underline
+.result-title
+	margin: 10px 0
+.sort-list
+	font-size: 12px
+	ul
+		li
+			display: inline-block
+			margin-left: 20px
+			color: #777
+			a
+				text-decoration: underline
+			a.active
+				text-decoration: none
+.main-content
+	margin-bottom: 40px
+.main-header
+	margin-bottom: 10px
+.prod-item
+	margin-bottom: 5px
+	padding: 6px
+	position: relative
+	background-color: $bg-color
+	border: solid 2px #fc6
+	border-radius: 4px
+.prod-img img
+	max-width: 100%
+	height: auto
+	border-radius: 4px
+.prod-title
+	color: #0000EE
+.prod-list
+	border-bottom: dotted 1px #EEE
+.prod-info
+	color: #888
+	strong
+		color: #000
+	.prod-list
+		margin: 4px 0
+		padding-bottom: 4px
+		li
+			display: inline-block
+			width: 49%
+.price-uan
+	span
+		font-size: 20px
+		color: $price-color
+.prod-descr
+	font-size: 11px
+	color: #888
+.prod-links
+	a
+		display: block
+		font-size: 11px
+		text-decoration: underline
+.prod-data
+	font-size: 12px
+.bookmark-link
+	position: absolute
+	right: 5px
+	top: 5px
+	display: block
+	width: 20px
+	height: 20px
+	text-align: center
+	border-radius: 15%
+	background-color: #fff
+	transition: all .5s
+	z-index: 99
+	&:hover
+		box-shadow: inset 0 0 8px #ffae00
+	.fa
+		color: #BDBDB5
+.smaster-block
+	border: solid 2px #555
+	margin-top: 15px
+	margin-bottom: 5px
+	padding: 5px 0
+	position: relative
+	background-image: url(http://i.rstcars.com/rst-oc-searchmaster-sprite.png)
+	background-position: 100% 0
+	background-repeat: no-repeat
+	min-height: 100px
+	border-radius: 4px
+	.smaster-title
+		background-color: #555
+		position: absolute
+		top: -12px
+		left: 10px
+		border-radius: 2px
+		display: normal
+		padding: 2px 6px
+		color: #FFF
+		font-weight: bold
+		font-size: 12px
+	.smaster-content
+		margin-top: 15px
+		h4
+			color: #000
+			font-size: 14px
+		ol
+			margin-top: 10px
+			margin-left: 20px 
+			li
+				list-style-type: disc
+				font-size: 12px
+				a
+					color: #0000EE
+					text-decoration: underline
+.pagination-container
+	border-top: solid 2px #fc6
+	padding: 20px 0
+.pagination
+	li
+		position: relative
+		display: inline-block
+		a
+			border-radius: 4px
+			&:hover, &:focus
+				background-color: $bg-color
+	li.active
+		&:after
+			content: " "
+			position: absolute
+			width: 20px
+			height: 20px
+			background: transparent url("http://i.rst.ua/rst-ua-tabs-sprite.png") -271px -444px no-repeat
+			top: -42px
+			left: 18%
+			z-index: 999
+		&:hover a
+			background-color: #EEEEEE
+			color: #0000EE
+		a
+			background-color: #EEEEEE
+			color: #0000EE
+.your-advert
+	font-size: 18px
+.footer-meta
+	font-size: 12px
+	color: #888
+.footer-copyright
+	margin-top: 15px
+	@extend .footer-meta
+.but1
+	display: inline-block
+	width: 130px
+	line-height: 14px
+	padding: 8px 0px 5px 15px
+	color: #FFF
+	font-size: 12px
+	z-index: 999
+	position: relative
+	left: -4px
+	background: transparent url("http://i.rst.ua/rst-ua-tabs-sprite.png")
+	background-position: -48px -151px
+	&:after
+		content: ' '
+		background: transparent url("http://i.rst.ua/rst-ua-tabs-sprite.png")
+		width: 40px
+		height: 100%
+		position: absolute
+		top: 0
+		background-position: 0 -164px
+		right: -40px
+		z-index: 99
+.but2
+	@extend .but1
+	width: 80px
+	position: absolute
+	padding: 15px 0px 15px 14px
+	top: 0px
+	left: 142px
+	z-index: 9
+	background-position: -48px -76px
+	&:after
+		background-position: 0 -89px
+.search-form
+	padding: 10px 0 1px 0
+	color: #fff
+	z-index: 99
+	position: relative
+	box-shadow: 0 0 3px 0 #000
+	background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAIBAMAAAAy1HOFAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAJ1BMVEUpKSk6OTk6OTo6OjksLCw2NTU1NDU2NDU2NTQxMDExMDAwMDD///9WuzG7AAAAAWJLR0QMgbNRYwAAAAlwSFlzAAALEgAACxIB0t1+/AAAACxJREFUCNdjYGBgVDRkcHFxTW9lmLV65qqdDGEVIS4uDELCAgwMUDZEHKwGACi3DdHA6D/6AAAAAElFTkSuQmCC") 0 0
+	.form-group
+		margin-left: 0
+		margin-right: 0
+		margin-bottom: 9px
+		.checkbox
+			padding-top: 0
+		.form-control
+			height: 25px
+			padding: 0 5px
+			font-size: 12px
+		.control-label
+			font-weight: normal
+			line-height: 10px
+			padding-left: 7px
+			padding-right: 0
+			text-align: left
+		.btn
+			border-top: solid 1px #ffeebf
+			font-size: 18px
+			color: #000
+			font-weight: bold
+			background: linear-gradient(#ffdc7f 0%, #ffb900 100%)
+			&:hover
+.reset-form
+	font-size: 12px
+	color: #888
+.devider
+	float: left
+.show-more
+	background-color: #333
+	border: 1px solid #000 
+	color: #888
+	display: inline-block
+	border-radius: 2px
+	font-size: 12px
+	text-align: center
+	padding: 2px 8px
+.form-title
+	padding-left: 5px
+.more-settings
+	display: none
+.search-block
+	width: 275px
+	.your-advert
+		font-size: 12px
+		margin: 5px 0
+.search-block.fixed
+	position: fixed
+	top: 0
+	right: inherit !important
+	z-index: 9999
+.button-container
+	position: relative
+.search-block-container
+	position: relative
+	float: left
+
+//ALWAYS END
+@import "_media.sass"
+
